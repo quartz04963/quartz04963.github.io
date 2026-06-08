@@ -4,142 +4,216 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Personal website — about me, my work, and how to get in touch." />
-  <title>My Personal Page</title>
+  <title>YOUR NAME</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
 
-  <header class="site-header">
-    <nav class="nav" aria-label="Primary navigation">
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#cv">CV</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <!-- ── Top Nav ─────────────────────────────────────────── -->
+  <header class="top-nav" role="banner">
+    <div class="nav-inner">
+      <div class="nav-brand" aria-label="Site logo">
+        <span class="m-wordmark">M</span>
+      </div>
+      <nav aria-label="Primary navigation">
+        <ul class="nav-links" role="list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#cv">CV</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main id="main">
 
-    <!-- Hero / About -->
-    <section id="about" class="section hero">
-      <img
-        src="assets/profile.png"
-        alt="Profile photo"
-        class="avatar"
-        width="160"
-        height="160"
-      />
-      <div class="hero-text">
-        <h1>Hello, I'm <span class="accent">Your Name</span></h1>
-        <p class="tagline">Software Engineer &middot; Open-Source Enthusiast &middot; Life-long Learner</p>
-        <p>
-          I build clean, user-focused software and care deeply about craft.
-          Based in Seoul, South Korea — open to remote opportunities worldwide.
-        </p>
-        <div class="hero-links">
-          <a href="#contact" class="btn">Get in touch</a>
-          <a href="#cv" class="btn btn-outline">Download CV</a>
+    <!-- ── Hero ────────────────────────────────────────────── -->
+    <section id="about" class="hero-band" aria-label="About">
+      <div class="hero-inner">
+        <div class="hero-photo-wrap">
+          <img
+            src="assets/profile.png"
+            alt="Profile photo"
+            class="hero-photo"
+            width="320"
+            height="320"
+          />
+        </div>
+        <div class="hero-copy">
+          <p class="hero-eyebrow label-uppercase">Software Engineer</p>
+          <h1 class="display-xl">YOUR<br>NAME.</h1>
+          <p class="hero-tagline body-strong">Open-Source Enthusiast &middot; Life-long Learner<br>Based in Seoul — open to remote worldwide.</p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn-primary">Get in touch</a>
+            <a href="#cv" class="btn-outline">Download CV</a>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Experience -->
-    <section id="experience" class="section">
-      <h2>Experience</h2>
-      <ol class="timeline" reversed>
-        <li class="timeline-item">
-          <span class="timeline-date">2023 – Present</span>
-          <h3>Senior Software Engineer</h3>
-          <p class="org">Company Name &middot; Seoul</p>
-          <p>Led development of a customer-facing platform serving 50 k+ users. Reduced page load time by 40 % through code-splitting and caching.</p>
-        </li>
-        <li class="timeline-item">
-          <span class="timeline-date">2021 – 2023</span>
-          <h3>Software Engineer</h3>
-          <p class="org">Previous Company &middot; Remote</p>
-          <p>Built and maintained REST APIs in Go. Collaborated with design and product to ship a mobile-first redesign.</p>
-        </li>
-        <li class="timeline-item">
-          <span class="timeline-date">2019 – 2021</span>
-          <h3>Junior Developer</h3>
-          <p class="org">Startup &middot; Seoul</p>
-          <p>Full-stack web development with React and Node.js. Introduced automated testing, lifting coverage from 10 % to 70 %.</p>
-        </li>
-      </ol>
+    <div class="m-stripe" aria-hidden="true"></div>
+
+    <!-- ── Experience ──────────────────────────────────────── -->
+    <section id="experience" class="content-band" aria-label="Experience">
+      <div class="band-inner">
+        <p class="section-eyebrow label-uppercase">Career</p>
+        <h2 class="display-md">EXPERIENCE.</h2>
+        <ol class="timeline" reversed>
+          <li class="timeline-item">
+            <div class="timeline-meta">
+              <span class="timeline-date label-uppercase">2023 – Present</span>
+            </div>
+            <div class="timeline-body">
+              <h3 class="title-lg">Senior Software Engineer</h3>
+              <p class="timeline-org label-uppercase muted">Company Name &middot; Seoul</p>
+              <p class="body-md">Led development of a customer-facing platform serving 50 k+ users. Reduced page load time by 40 % through code-splitting and caching strategies.</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-meta">
+              <span class="timeline-date label-uppercase">2021 – 2023</span>
+            </div>
+            <div class="timeline-body">
+              <h3 class="title-lg">Software Engineer</h3>
+              <p class="timeline-org label-uppercase muted">Previous Company &middot; Remote</p>
+              <p class="body-md">Built and maintained REST APIs in Go. Collaborated with design and product to ship a mobile-first redesign on time and under budget.</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-meta">
+              <span class="timeline-date label-uppercase">2019 – 2021</span>
+            </div>
+            <div class="timeline-body">
+              <h3 class="title-lg">Junior Developer</h3>
+              <p class="timeline-org label-uppercase muted">Startup &middot; Seoul</p>
+              <p class="body-md">Full-stack web development with React and Node.js. Introduced automated testing, lifting test coverage from 10 % to 70 %.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
     </section>
 
-    <!-- Projects -->
-    <section id="projects" class="section">
-      <h2>Projects</h2>
-      <ul class="card-grid" role="list">
-        <li class="card">
-          <h3>Project Alpha</h3>
-          <p>A CLI tool that automates repetitive deployment tasks. Built with Go and used by teams at three companies.</p>
-          <div class="tags">
-            <span class="tag">Go</span>
-            <span class="tag">CLI</span>
-            <span class="tag">DevOps</span>
-          </div>
-          <a href="#" class="card-link" aria-label="View Project Alpha on GitHub">GitHub →</a>
-        </li>
-        <li class="card">
-          <h3>Project Beta</h3>
-          <p>An open-source React component library focused on accessibility and design consistency.</p>
-          <div class="tags">
-            <span class="tag">React</span>
-            <span class="tag">TypeScript</span>
-            <span class="tag">a11y</span>
-          </div>
-          <a href="#" class="card-link" aria-label="View Project Beta on GitHub">GitHub →</a>
-        </li>
-        <li class="card">
-          <h3>Project Gamma</h3>
-          <p>A lightweight static site generator written in Python with support for Markdown and custom themes.</p>
-          <div class="tags">
-            <span class="tag">Python</span>
-            <span class="tag">Markdown</span>
-            <span class="tag">SSG</span>
-          </div>
-          <a href="#" class="card-link" aria-label="View Project Gamma on GitHub">GitHub →</a>
-        </li>
-      </ul>
+    <div class="m-stripe" aria-hidden="true"></div>
+
+    <!-- ── Projects ────────────────────────────────────────── -->
+    <section id="projects" class="content-band" aria-label="Projects">
+      <div class="band-inner">
+        <p class="section-eyebrow label-uppercase">Work</p>
+        <h2 class="display-md">PROJECTS.</h2>
+        <ul class="card-grid" role="list">
+          <li class="feature-card">
+            <div class="card-inner">
+              <p class="card-category label-uppercase">Go &middot; CLI &middot; DevOps</p>
+              <h3 class="title-lg">Project Alpha</h3>
+              <p class="body-md">A CLI tool that automates repetitive deployment tasks. Built with Go and used by engineering teams at three companies.</p>
+              <a href="#" class="text-link" aria-label="View Project Alpha on GitHub">VIEW ON GITHUB &rarr;</a>
+            </div>
+          </li>
+          <li class="feature-card">
+            <div class="card-inner">
+              <p class="card-category label-uppercase">React &middot; TypeScript &middot; a11y</p>
+              <h3 class="title-lg">Project Beta</h3>
+              <p class="body-md">An open-source React component library focused on accessibility and design-system consistency across large codebases.</p>
+              <a href="#" class="text-link" aria-label="View Project Beta on GitHub">VIEW ON GITHUB &rarr;</a>
+            </div>
+          </li>
+          <li class="feature-card">
+            <div class="card-inner">
+              <p class="card-category label-uppercase">Python &middot; Markdown &middot; SSG</p>
+              <h3 class="title-lg">Project Gamma</h3>
+              <p class="body-md">A lightweight static site generator written in Python with Markdown support and custom theming — zero runtime dependencies.</p>
+              <a href="#" class="text-link" aria-label="View Project Gamma on GitHub">VIEW ON GITHUB &rarr;</a>
+            </div>
+          </li>
+        </ul>
+      </div>
     </section>
 
-    <!-- CV -->
-    <section id="cv" class="section cv-section">
-      <h2>Curriculum Vitae</h2>
-      <p>Download my full CV for a detailed overview of my education, work history, and skills.</p>
-      <a href="assets/cv.pdf" class="btn" download aria-label="Download CV as PDF">
-        Download CV (PDF)
-      </a>
+    <div class="m-stripe" aria-hidden="true"></div>
+
+    <!-- ── CV ─────────────────────────────────────────────── -->
+    <section id="cv" class="content-band cv-band" aria-label="Curriculum Vitae">
+      <div class="band-inner cv-inner">
+        <div class="cv-copy">
+          <p class="section-eyebrow label-uppercase">Download</p>
+          <h2 class="display-md">CURRICULUM<br>VITAE.</h2>
+          <p class="body-md">Full overview of my education, work history, technical skills, and selected publications. Updated regularly.</p>
+          <a href="assets/cv.pdf" class="btn-primary" download aria-label="Download CV as PDF">DOWNLOAD PDF</a>
+        </div>
+        <div class="cv-spec-grid" aria-hidden="true">
+          <div class="spec-cell">
+            <span class="spec-value display-sm">5+</span>
+            <span class="spec-label label-uppercase">Years Exp.</span>
+          </div>
+          <div class="spec-cell">
+            <span class="spec-value display-sm">20+</span>
+            <span class="spec-label label-uppercase">Projects</span>
+          </div>
+          <div class="spec-cell">
+            <span class="spec-value display-sm">3</span>
+            <span class="spec-label label-uppercase">Companies</span>
+          </div>
+          <div class="spec-cell">
+            <span class="spec-value display-sm">∞</span>
+            <span class="spec-label label-uppercase">Curiosity</span>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Contact -->
-    <section id="contact" class="section">
-      <h2>Contact</h2>
-      <p>The best way to reach me is by email. I'm also active on GitHub and LinkedIn.</p>
-      <ul class="contact-list">
-        <li>
-          <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="20" height="20"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
-          <a href="mailto:your@email.com">your@email.com</a>
-        </li>
-        <li>
-          <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="20" height="20"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.341-3.369-1.341-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.607.069-.607 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.912.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.026A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.295 2.747-1.026 2.747-1.026.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
-          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">github.com/yourusername</a>
-        </li>
-        <li>
-          <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="20" height="20"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zm-1 16v-5.5c0-1.378-.503-2.327-1.674-2.327-.9 0-1.426.612-1.664 1.203-.086.207-.107.496-.107.785V19h-2.979s.039-8.5 0-9.375H14.5v1.328c-.008.013-.019.026-.027.039h.027v-.039c.395-.609 1.103-1.479 2.686-1.479 1.961 0 3.437 1.282 3.437 4.037V19H18zM7.5 8.25A1.75 1.75 0 1 0 7.5 4.75 1.75 1.75 0 0 0 7.5 8.25zM9 9.625H6V19h3V9.625z"/></svg>
-          <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">linkedin.com/in/yourusername</a>
-        </li>
-      </ul>
+    <div class="m-stripe" aria-hidden="true"></div>
+
+    <!-- ── Contact ─────────────────────────────────────────── -->
+    <section id="contact" class="content-band" aria-label="Contact">
+      <div class="band-inner">
+        <p class="section-eyebrow label-uppercase">Reach out</p>
+        <h2 class="display-md">CONTACT.</h2>
+        <p class="body-md contact-lead">The best way to reach me is by email. I'm also active on GitHub and LinkedIn.</p>
+        <ul class="contact-list" role="list">
+          <li>
+            <a href="mailto:your@email.com" class="contact-row">
+              <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              <span>your@email.com</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="contact-row">
+              <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.341-3.369-1.341-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.607.069-.607 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.912.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.026A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.295 2.747-1.026 2.747-1.026.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+              <span>github.com/yourusername</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" class="contact-row">
+              <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zm-1 16v-5.5c0-1.378-.503-2.327-1.674-2.327-.9 0-1.426.612-1.664 1.203-.086.207-.107.496-.107.785V19h-2.979s.039-8.5 0-9.375H14.5v1.328c-.008.013-.019.026-.027.039h.027v-.039c.395-.609 1.103-1.479 2.686-1.479 1.961 0 3.437 1.282 3.437 4.037V19H18zM7.5 8.25A1.75 1.75 0 1 0 7.5 4.75 1.75 1.75 0 0 0 7.5 8.25zM9 9.625H6V19h3V9.625z"/></svg>
+              <span>linkedin.com/in/yourusername</span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </section>
 
   </main>
 
-  <footer class="site-footer">
-    <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+  <!-- ── Footer ───────────────────────────────────────────── -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <span class="m-wordmark footer-brand">M</span>
+      <p class="footer-copy">&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+      <nav aria-label="Footer navigation">
+        <ul class="footer-links" role="list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </footer>
 
   <script>
