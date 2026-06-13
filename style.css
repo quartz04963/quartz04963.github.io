@@ -428,6 +428,32 @@ ul, ol { list-style: none; }
 }
 .cv-copy .display-md { margin-bottom: 0; }
 .cv-lead { color: rgba(255,255,255,0.8); }
+.cv-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  margin-top: var(--sp-sm);
+}
+.cv-info-row {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: var(--sp-lg);
+  padding: var(--sp-md) 0;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  align-items: baseline;
+}
+.cv-label {
+  color: rgba(255,255,255,0.55);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  flex-shrink: 0;
+}
+.cv-value {
+  margin: 0;
+  color: rgba(255,255,255,0.88);
+  font-weight: 400;
+}
 
 /* ── AI Usage Requirement ───────────────────────────────────────── */
 .ai-usage-list {
