@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Personal website — about me, my work, and how to get in touch." />
-  <title>Your Name</title>
+  <meta name="description" content="Seokyoung Kim — Computer Science and Engineering student at Seoul National University." />
+  <title>Seokyoung Kim</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -26,8 +26,8 @@
       <nav aria-label="Primary navigation">
         <ul class="nav-links" role="list">
           <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
+          <li><a href="#activities">Activities</a></li>
+          <li><a href="#courses">Courses</a></li>
           <li><a href="#cv">CV</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -37,13 +37,17 @@
 
   <main id="main">
 
-    <!-- ── Hero band — DARK ──────────────────────────────────── -->
-    <section id="about" class="band band-dark hero-band" aria-label="About">
+    <!-- ── About Me band — DARK ──────────────────────────────── -->
+    <section id="about" class="band band-dark hero-band" aria-label="About Me">
       <div class="band-inner hero-inner">
         <div class="hero-copy">
-          <p class="caption-md on-dark-mute">Software Engineer</p>
-          <h1 class="display-xl on-dark">Your Name.</h1>
-          <p class="body-md body-dark hero-tagline">Open-Source Enthusiast · Life-long Learner<br>Based in Seoul, South Korea — open to remote opportunities worldwide.</p>
+          <p class="caption-md on-dark-mute">Computer Science and Engineering · Seoul National University</p>
+          <h1 class="display-xl on-dark">Seokyoung Kim.</h1>
+          <div class="hero-bio body-dark">
+            <p>I am a Computer Science and Engineering student at Seoul National University who is passionate about creating meaningful digital experiences.</p>
+            <p>I aspire to build worlds that go beyond everyday spaces — worlds that are fresh, vivid, and creative, where people can find inspiration, comfort, and a place to recharge. Through technology and game development, I want to create experiences that connect with people emotionally and provide a unique space where imagination can come to life.</p>
+            <p>I am especially interested in game development, software engineering, and interactive technologies. I enjoy transforming ideas into playable experiences and solving technical challenges through programming and collaboration.</p>
+          </div>
           <div class="hero-actions">
             <a href="#contact" class="btn-primary">Get in touch</a>
             <a href="#cv" class="btn-secondary-dark">Download CV</a>
@@ -52,7 +56,7 @@
         <div class="hero-photo-wrap">
           <img
             src="assets/profile.jpg"
-            alt="Profile photo"
+            alt="Profile photo of Seokyoung Kim"
             class="hero-photo"
             width="400"
             height="400"
@@ -61,61 +65,99 @@
       </div>
     </section>
 
-    <!-- ── Experience band — LIGHT ───────────────────────────── -->
-    <section id="experience" class="band band-light" aria-label="Experience">
+    <!-- ── Activities band — LIGHT ───────────────────────────── -->
+    <section id="activities" class="band band-light" aria-label="Activities">
       <div class="band-inner">
-        <h2 class="display-md ink">Experience</h2>
-        <ol class="timeline" reversed>
+        <h2 class="display-md ink">Activities</h2>
+        <ol class="timeline">
+
           <li class="timeline-item">
-            <span class="timeline-date caption-md mute-light">2023 – Present</span>
+            <div class="timeline-meta">
+              <p class="caption-md mute-light">Cheongseok High School</p>
+            </div>
             <div class="timeline-body">
-              <h3 class="heading-lg ink">Senior Software Engineer</h3>
-              <p class="caption-md mute-light org">Company Name · Seoul</p>
-              <p class="body-sm body-light">Led development of a customer-facing platform serving 50 k+ users. Reduced page load time by 40 % through code-splitting and caching strategies.</p>
+              <h3 class="heading-lg ink">Founder, Game Development Club "App Development Club"</h3>
             </div>
           </li>
+
           <li class="timeline-item">
-            <span class="timeline-date caption-md mute-light">2021 – 2023</span>
+            <div class="timeline-meta">
+              <p class="caption-md mute-light">Seoul National University</p>
+            </div>
             <div class="timeline-body">
-              <h3 class="heading-lg ink">Software Engineer</h3>
-              <p class="caption-md mute-light org">Previous Company · Remote</p>
-              <p class="body-sm body-light">Built and maintained REST APIs in Go. Collaborated with design and product to ship a mobile-first redesign on time and under budget.</p>
+              <h3 class="heading-lg ink">Member, SNUGDC</h3>
+              <p class="caption-md mute-light">Seoul National University Game Development Club</p>
             </div>
           </li>
+
           <li class="timeline-item">
-            <span class="timeline-date caption-md mute-light">2019 – 2021</span>
+            <div class="timeline-meta">
+              <p class="caption-md mute-light">2025 Nexon Dream Members</p>
+              <p class="caption-sm ps-blue activity-badge">Grand Prize</p>
+            </div>
             <div class="timeline-body">
-              <h3 class="heading-lg ink">Junior Developer</h3>
-              <p class="caption-md mute-light org">Startup · Seoul</p>
-              <p class="body-sm body-light">Full-stack web development with React and Node.js. Introduced automated testing, lifting test coverage from 10 % to 70 %.</p>
+              <h3 class="heading-lg ink">Undo — Programmer</h3>
+              <p class="caption-md mute-light">Grand Prize Project</p>
+              <p class="body-sm body-light">Worked as a programmer for the project. Awarded the Grand Prize in the 2025 Nexon Dream Members competition.</p>
             </div>
           </li>
+
+          <li class="timeline-item">
+            <div class="timeline-meta">
+              <p class="caption-md mute-light">2025 Nexon Dream Members</p>
+              <p class="caption-sm ps-blue activity-badge">Rookie Category</p>
+            </div>
+            <div class="timeline-body">
+              <h3 class="heading-lg ink">Truth or Devil <span class="working-title">(Working Title)</span> — Programmer</h3>
+              <p class="caption-md mute-light">Rookie Category Selected Project</p>
+              <p class="body-sm body-light">Participated in the development process as a programmer. Contributed to gameplay implementation and technical development.</p>
+            </div>
+          </li>
+
         </ol>
       </div>
     </section>
 
-    <!-- ── Projects band — DARK ──────────────────────────────── -->
-    <section id="projects" class="band band-dark" aria-label="Projects">
+    <!-- ── Course Planning List band — DARK ──────────────────── -->
+    <section id="courses" class="band band-dark" aria-label="Course Planning List">
       <div class="band-inner">
-        <h2 class="display-md on-dark">Projects</h2>
-        <ul class="card-grid" role="list">
-          <li class="product-card-dark">
-            <p class="caption-sm ps-blue">Go · CLI · DevOps</p>
-            <h3 class="heading-lg on-dark">Project Alpha</h3>
-            <p class="body-sm body-dark">A CLI tool that automates repetitive deployment tasks. Built with Go and used by engineering teams at three companies.</p>
-            <a href="#" class="link-dark" aria-label="View Project Alpha on GitHub">View on GitHub →</a>
+        <h2 class="display-md on-dark">Course Planning List</h2>
+        <ul class="course-list" role="list">
+          <li class="course-item">
+            <span class="course-num caption-sm ps-blue">01</span>
+            <span class="course-name heading-lg on-dark">Database Systems</span>
           </li>
-          <li class="product-card-dark">
-            <p class="caption-sm ps-blue">React · TypeScript · a11y</p>
-            <h3 class="heading-lg on-dark">Project Beta</h3>
-            <p class="body-sm body-dark">An open-source React component library focused on accessibility and design-system consistency across large codebases.</p>
-            <a href="#" class="link-dark" aria-label="View Project Beta on GitHub">View on GitHub →</a>
+          <li class="course-item">
+            <span class="course-num caption-sm ps-blue">02</span>
+            <span class="course-name heading-lg on-dark">Data Communication</span>
           </li>
-          <li class="product-card-dark">
-            <p class="caption-sm ps-blue">Python · Markdown · SSG</p>
-            <h3 class="heading-lg on-dark">Project Gamma</h3>
-            <p class="body-sm body-dark">A lightweight static site generator written in Python with Markdown support and custom theming — zero runtime dependencies.</p>
-            <a href="#" class="link-dark" aria-label="View Project Gamma on GitHub">View on GitHub →</a>
+          <li class="course-item">
+            <span class="course-num caption-sm ps-blue">03</span>
+            <span class="course-name heading-lg on-dark">Mobile Computing and Applications</span>
+          </li>
+          <li class="course-item">
+            <span class="course-num caption-sm ps-blue">04</span>
+            <span class="course-name heading-lg on-dark">Computer Networks</span>
+          </li>
+          <li class="course-item">
+            <span class="course-num caption-sm ps-blue">05</span>
+            <span class="course-name heading-lg on-dark">Computer Graphics</span>
+          </li>
+          <li class="course-item">
+            <span class="course-num caption-sm ps-blue">06</span>
+            <span class="course-name heading-lg on-dark">Introduction to Modern Cryptography</span>
+          </li>
+          <li class="course-item">
+            <span class="course-num caption-sm ps-blue">07</span>
+            <span class="course-name heading-lg on-dark">Internet Security</span>
+          </li>
+          <li class="course-item">
+            <span class="course-num caption-sm ps-blue">08</span>
+            <span class="course-name heading-lg on-dark">Artificial Intelligence</span>
+          </li>
+          <li class="course-item">
+            <span class="course-num caption-sm ps-blue">09</span>
+            <span class="course-name heading-lg on-dark">Introduction to Machine Learning</span>
           </li>
         </ul>
       </div>
@@ -126,26 +168,8 @@
       <div class="band-inner cv-inner">
         <div class="cv-copy">
           <h2 class="display-md on-dark">Curriculum Vitae</h2>
-          <p class="body-md on-dark cv-lead">Full overview of my education, work history, technical skills, and selected publications. Updated regularly.</p>
+          <p class="body-md cv-lead">Download my CV for a full overview of my education, activities, and skills.</p>
           <a href="assets/cv.pdf" class="btn-on-blue" download aria-label="Download CV as PDF">Download CV (PDF)</a>
-        </div>
-        <div class="cv-stats" aria-hidden="true">
-          <div class="stat-card">
-            <span class="stat-value">5+</span>
-            <span class="stat-label">Years Exp.</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-value">20+</span>
-            <span class="stat-label">Projects</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-value">3</span>
-            <span class="stat-label">Companies</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-value">∞</span>
-            <span class="stat-label">Curiosity</span>
-          </div>
         </div>
       </div>
     </section>
@@ -154,24 +178,18 @@
     <section id="contact" class="band band-light" aria-label="Contact">
       <div class="band-inner">
         <h2 class="display-md ink">Contact</h2>
-        <p class="body-md body-light contact-lead">The best way to reach me is by email. I'm also active on GitHub and LinkedIn.</p>
+        <p class="body-md body-light contact-lead">Feel free to reach out via email or GitHub.</p>
         <ul class="contact-list" role="list">
           <li>
-            <a href="mailto:your@email.com" class="contact-row">
+            <a href="mailto:quartz0@snu.ac.kr" class="contact-row">
               <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
-              <span>your@email.com</span>
+              <span>quartz0@snu.ac.kr</span>
             </a>
           </li>
           <li>
-            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="contact-row">
+            <a href="https://github.com/quartz04963" target="_blank" rel="noopener noreferrer" class="contact-row">
               <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.341-3.369-1.341-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.607.069-.607 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.912.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.026A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.295 2.747-1.026 2.747-1.026.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
-              <span>github.com/yourusername</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" class="contact-row">
-              <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zm-1 16v-5.5c0-1.378-.503-2.327-1.674-2.327-.9 0-1.426.612-1.664 1.203-.086.207-.107.496-.107.785V19h-2.979s.039-8.5 0-9.375H14.5v1.328c-.008.013-.019.026-.027.039h.027v-.039c.395-.609 1.103-1.479 2.686-1.479 1.961 0 3.437 1.282 3.437 4.037V19H18zM7.5 8.25A1.75 1.75 0 1 0 7.5 4.75 1.75 1.75 0 0 0 7.5 8.25zM9 9.625H6V19h3V9.625z"/></svg>
-              <span>linkedin.com/in/yourusername</span>
+              <span>github.com/quartz04963</span>
             </a>
           </li>
         </ul>
@@ -183,12 +201,12 @@
   <!-- ── Footer — BLUE ─────────────────────────────────────── -->
   <footer class="site-footer band-blue" role="contentinfo">
     <div class="footer-inner">
-      <p class="footer-copy">© <span id="year"></span> Your Name. All rights reserved.</p>
+      <p class="footer-copy">© <span id="year"></span> Seokyoung Kim.</p>
       <nav aria-label="Footer navigation">
         <ul class="footer-links" role="list">
           <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
+          <li><a href="#activities">Activities</a></li>
+          <li><a href="#courses">Courses</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
