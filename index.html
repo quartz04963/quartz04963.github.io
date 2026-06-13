@@ -4,21 +4,25 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Personal website — about me, my work, and how to get in touch." />
-  <title>YOUR NAME</title>
+  <title>Your Name</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
   <a class="skip-link" href="#main">Skip to main content</a>
 
-  <!-- ── Top Nav ─────────────────────────────────────────── -->
-  <header class="top-nav" role="banner">
+  <!-- ── Primary nav (dark) ────────────────────────────────── -->
+  <header class="primary-nav" role="banner">
     <div class="nav-inner">
-      <div class="nav-brand" aria-label="Site logo">
-        <span class="m-wordmark">M</span>
-      </div>
+      <a href="#about" class="nav-logo" aria-label="Home">
+        <svg aria-hidden="true" focusable="false" viewBox="0 0 48 48" width="28" height="28" fill="none">
+          <circle cx="24" cy="24" r="22" stroke="#0070d1" stroke-width="3"/>
+          <path d="M14 32V16h9c3.3 0 5.5 2 5.5 5s-2.2 5-5.5 5h-5v6H14zm4-9.5h4.5c1.4 0 2-.8 2-1.5s-.6-1.5-2-1.5H18v3z" fill="#fff"/>
+        </svg>
+      </a>
       <nav aria-label="Primary navigation">
         <ul class="nav-links" role="list">
           <li><a href="#about">About</a></li>
@@ -33,148 +37,124 @@
 
   <main id="main">
 
-    <!-- ── Hero ────────────────────────────────────────────── -->
-    <section id="about" class="hero-band" aria-label="About">
-      <div class="hero-inner">
-        <div class="hero-photo-wrap">
-          <img
-            src="assets/profile.png"
-            alt="Profile photo"
-            class="hero-photo"
-            width="320"
-            height="320"
-          />
-        </div>
+    <!-- ── Hero band — DARK ──────────────────────────────────── -->
+    <section id="about" class="band band-dark hero-band" aria-label="About">
+      <div class="band-inner hero-inner">
         <div class="hero-copy">
-          <p class="hero-eyebrow label-uppercase">Software Engineer</p>
-          <h1 class="display-xl">YOUR<br>NAME.</h1>
-          <p class="hero-tagline body-strong">Open-Source Enthusiast &middot; Life-long Learner<br>Based in Seoul — open to remote worldwide.</p>
+          <p class="caption-md on-dark-mute">Software Engineer</p>
+          <h1 class="display-xl on-dark">Your Name.</h1>
+          <p class="body-md body-dark hero-tagline">Open-Source Enthusiast · Life-long Learner<br>Based in Seoul, South Korea — open to remote opportunities worldwide.</p>
           <div class="hero-actions">
             <a href="#contact" class="btn-primary">Get in touch</a>
-            <a href="#cv" class="btn-outline">Download CV</a>
+            <a href="#cv" class="btn-secondary-dark">Download CV</a>
           </div>
+        </div>
+        <div class="hero-photo-wrap">
+          <img
+            src="assets/profile.jpg"
+            alt="Profile photo"
+            class="hero-photo"
+            width="400"
+            height="400"
+          />
         </div>
       </div>
     </section>
 
-    <div class="m-stripe" aria-hidden="true"></div>
-
-    <!-- ── Experience ──────────────────────────────────────── -->
-    <section id="experience" class="content-band" aria-label="Experience">
+    <!-- ── Experience band — LIGHT ───────────────────────────── -->
+    <section id="experience" class="band band-light" aria-label="Experience">
       <div class="band-inner">
-        <p class="section-eyebrow label-uppercase">Career</p>
-        <h2 class="display-md">EXPERIENCE.</h2>
+        <h2 class="display-md ink">Experience</h2>
         <ol class="timeline" reversed>
           <li class="timeline-item">
-            <div class="timeline-meta">
-              <span class="timeline-date label-uppercase">2023 – Present</span>
-            </div>
+            <span class="timeline-date caption-md mute-light">2023 – Present</span>
             <div class="timeline-body">
-              <h3 class="title-lg">Senior Software Engineer</h3>
-              <p class="timeline-org label-uppercase muted">Company Name &middot; Seoul</p>
-              <p class="body-md">Led development of a customer-facing platform serving 50 k+ users. Reduced page load time by 40 % through code-splitting and caching strategies.</p>
+              <h3 class="heading-lg ink">Senior Software Engineer</h3>
+              <p class="caption-md mute-light org">Company Name · Seoul</p>
+              <p class="body-sm body-light">Led development of a customer-facing platform serving 50 k+ users. Reduced page load time by 40 % through code-splitting and caching strategies.</p>
             </div>
           </li>
           <li class="timeline-item">
-            <div class="timeline-meta">
-              <span class="timeline-date label-uppercase">2021 – 2023</span>
-            </div>
+            <span class="timeline-date caption-md mute-light">2021 – 2023</span>
             <div class="timeline-body">
-              <h3 class="title-lg">Software Engineer</h3>
-              <p class="timeline-org label-uppercase muted">Previous Company &middot; Remote</p>
-              <p class="body-md">Built and maintained REST APIs in Go. Collaborated with design and product to ship a mobile-first redesign on time and under budget.</p>
+              <h3 class="heading-lg ink">Software Engineer</h3>
+              <p class="caption-md mute-light org">Previous Company · Remote</p>
+              <p class="body-sm body-light">Built and maintained REST APIs in Go. Collaborated with design and product to ship a mobile-first redesign on time and under budget.</p>
             </div>
           </li>
           <li class="timeline-item">
-            <div class="timeline-meta">
-              <span class="timeline-date label-uppercase">2019 – 2021</span>
-            </div>
+            <span class="timeline-date caption-md mute-light">2019 – 2021</span>
             <div class="timeline-body">
-              <h3 class="title-lg">Junior Developer</h3>
-              <p class="timeline-org label-uppercase muted">Startup &middot; Seoul</p>
-              <p class="body-md">Full-stack web development with React and Node.js. Introduced automated testing, lifting test coverage from 10 % to 70 %.</p>
+              <h3 class="heading-lg ink">Junior Developer</h3>
+              <p class="caption-md mute-light org">Startup · Seoul</p>
+              <p class="body-sm body-light">Full-stack web development with React and Node.js. Introduced automated testing, lifting test coverage from 10 % to 70 %.</p>
             </div>
           </li>
         </ol>
       </div>
     </section>
 
-    <div class="m-stripe" aria-hidden="true"></div>
-
-    <!-- ── Projects ────────────────────────────────────────── -->
-    <section id="projects" class="content-band" aria-label="Projects">
+    <!-- ── Projects band — DARK ──────────────────────────────── -->
+    <section id="projects" class="band band-dark" aria-label="Projects">
       <div class="band-inner">
-        <p class="section-eyebrow label-uppercase">Work</p>
-        <h2 class="display-md">PROJECTS.</h2>
+        <h2 class="display-md on-dark">Projects</h2>
         <ul class="card-grid" role="list">
-          <li class="feature-card">
-            <div class="card-inner">
-              <p class="card-category label-uppercase">Go &middot; CLI &middot; DevOps</p>
-              <h3 class="title-lg">Project Alpha</h3>
-              <p class="body-md">A CLI tool that automates repetitive deployment tasks. Built with Go and used by engineering teams at three companies.</p>
-              <a href="#" class="text-link" aria-label="View Project Alpha on GitHub">VIEW ON GITHUB &rarr;</a>
-            </div>
+          <li class="product-card-dark">
+            <p class="caption-sm ps-blue">Go · CLI · DevOps</p>
+            <h3 class="heading-lg on-dark">Project Alpha</h3>
+            <p class="body-sm body-dark">A CLI tool that automates repetitive deployment tasks. Built with Go and used by engineering teams at three companies.</p>
+            <a href="#" class="link-dark" aria-label="View Project Alpha on GitHub">View on GitHub →</a>
           </li>
-          <li class="feature-card">
-            <div class="card-inner">
-              <p class="card-category label-uppercase">React &middot; TypeScript &middot; a11y</p>
-              <h3 class="title-lg">Project Beta</h3>
-              <p class="body-md">An open-source React component library focused on accessibility and design-system consistency across large codebases.</p>
-              <a href="#" class="text-link" aria-label="View Project Beta on GitHub">VIEW ON GITHUB &rarr;</a>
-            </div>
+          <li class="product-card-dark">
+            <p class="caption-sm ps-blue">React · TypeScript · a11y</p>
+            <h3 class="heading-lg on-dark">Project Beta</h3>
+            <p class="body-sm body-dark">An open-source React component library focused on accessibility and design-system consistency across large codebases.</p>
+            <a href="#" class="link-dark" aria-label="View Project Beta on GitHub">View on GitHub →</a>
           </li>
-          <li class="feature-card">
-            <div class="card-inner">
-              <p class="card-category label-uppercase">Python &middot; Markdown &middot; SSG</p>
-              <h3 class="title-lg">Project Gamma</h3>
-              <p class="body-md">A lightweight static site generator written in Python with Markdown support and custom theming — zero runtime dependencies.</p>
-              <a href="#" class="text-link" aria-label="View Project Gamma on GitHub">VIEW ON GITHUB &rarr;</a>
-            </div>
+          <li class="product-card-dark">
+            <p class="caption-sm ps-blue">Python · Markdown · SSG</p>
+            <h3 class="heading-lg on-dark">Project Gamma</h3>
+            <p class="body-sm body-dark">A lightweight static site generator written in Python with Markdown support and custom theming — zero runtime dependencies.</p>
+            <a href="#" class="link-dark" aria-label="View Project Gamma on GitHub">View on GitHub →</a>
           </li>
         </ul>
       </div>
     </section>
 
-    <div class="m-stripe" aria-hidden="true"></div>
-
-    <!-- ── CV ─────────────────────────────────────────────── -->
-    <section id="cv" class="content-band cv-band" aria-label="Curriculum Vitae">
+    <!-- ── CV band — BLUE ────────────────────────────────────── -->
+    <section id="cv" class="band band-blue" aria-label="Curriculum Vitae">
       <div class="band-inner cv-inner">
         <div class="cv-copy">
-          <p class="section-eyebrow label-uppercase">Download</p>
-          <h2 class="display-md">CURRICULUM<br>VITAE.</h2>
-          <p class="body-md">Full overview of my education, work history, technical skills, and selected publications. Updated regularly.</p>
-          <a href="assets/cv.pdf" class="btn-primary" download aria-label="Download CV as PDF">DOWNLOAD PDF</a>
+          <h2 class="display-md on-dark">Curriculum Vitae</h2>
+          <p class="body-md on-dark cv-lead">Full overview of my education, work history, technical skills, and selected publications. Updated regularly.</p>
+          <a href="assets/cv.pdf" class="btn-on-blue" download aria-label="Download CV as PDF">Download CV (PDF)</a>
         </div>
-        <div class="cv-spec-grid" aria-hidden="true">
-          <div class="spec-cell">
-            <span class="spec-value display-sm">5+</span>
-            <span class="spec-label label-uppercase">Years Exp.</span>
+        <div class="cv-stats" aria-hidden="true">
+          <div class="stat-card">
+            <span class="stat-value">5+</span>
+            <span class="stat-label">Years Exp.</span>
           </div>
-          <div class="spec-cell">
-            <span class="spec-value display-sm">20+</span>
-            <span class="spec-label label-uppercase">Projects</span>
+          <div class="stat-card">
+            <span class="stat-value">20+</span>
+            <span class="stat-label">Projects</span>
           </div>
-          <div class="spec-cell">
-            <span class="spec-value display-sm">3</span>
-            <span class="spec-label label-uppercase">Companies</span>
+          <div class="stat-card">
+            <span class="stat-value">3</span>
+            <span class="stat-label">Companies</span>
           </div>
-          <div class="spec-cell">
-            <span class="spec-value display-sm">∞</span>
-            <span class="spec-label label-uppercase">Curiosity</span>
+          <div class="stat-card">
+            <span class="stat-value">∞</span>
+            <span class="stat-label">Curiosity</span>
           </div>
         </div>
       </div>
     </section>
 
-    <div class="m-stripe" aria-hidden="true"></div>
-
-    <!-- ── Contact ─────────────────────────────────────────── -->
-    <section id="contact" class="content-band" aria-label="Contact">
+    <!-- ── Contact band — LIGHT ──────────────────────────────── -->
+    <section id="contact" class="band band-light" aria-label="Contact">
       <div class="band-inner">
-        <p class="section-eyebrow label-uppercase">Reach out</p>
-        <h2 class="display-md">CONTACT.</h2>
-        <p class="body-md contact-lead">The best way to reach me is by email. I'm also active on GitHub and LinkedIn.</p>
+        <h2 class="display-md ink">Contact</h2>
+        <p class="body-md body-light contact-lead">The best way to reach me is by email. I'm also active on GitHub and LinkedIn.</p>
         <ul class="contact-list" role="list">
           <li>
             <a href="mailto:your@email.com" class="contact-row">
@@ -200,11 +180,10 @@
 
   </main>
 
-  <!-- ── Footer ───────────────────────────────────────────── -->
-  <footer class="site-footer" role="contentinfo">
+  <!-- ── Footer — BLUE ─────────────────────────────────────── -->
+  <footer class="site-footer band-blue" role="contentinfo">
     <div class="footer-inner">
-      <span class="m-wordmark footer-brand">M</span>
-      <p class="footer-copy">&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+      <p class="footer-copy">© <span id="year"></span> Your Name. All rights reserved.</p>
       <nav aria-label="Footer navigation">
         <ul class="footer-links" role="list">
           <li><a href="#about">About</a></li>
